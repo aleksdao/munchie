@@ -1,0 +1,48 @@
+{
+  "name": "Garaje",
+  "id": "garaje-san-francisco",
+  "rating": 4.5,
+  "url": "https://www.yelp.com/biz/garaje-san-francisco?adjust_creative=x7LWoNv05Hf_vNeFecFImQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=x7LWoNv05Hf_vNeFecFImQ",
+  "photos": ["https://s3-media2.fl.yelpcdn.com/bphoto/_nN_DhLXkfwEkwPNxne9hw/o.jpg"],
+  "coordinates": {
+    "latitude": 37.781752952057,
+    "longitude": -122.396121970462
+  },
+  "hours": [
+    {
+      "is_open_now": true,
+      "open": [
+        {
+          "day": 0,
+          "start": "1130",
+          "end": "2200"
+        },
+        {
+          "day": 1,
+          "start": "1130",
+          "end": "2200"
+        },
+        {
+          "day": 2,
+          "start": "1130",
+          "end": "2200"
+        },
+        {
+          "day": 3,
+          "start": "1130",
+          "end": "2200"
+        },
+        {
+          "day": 4,
+          "start": "1130",
+          "end": "2200"
+        },
+        {
+          "day": 5,
+          "start": "1700",
+          "end": "2200"
+        }
+      ]
+    }
+  ]
+}
