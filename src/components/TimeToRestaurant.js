@@ -1,9 +1,18 @@
 /* eslint-disable class-methods-use-this */
 
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
+// import { Text } from './reusable/Text';
 import pick from 'lodash/pick';
 import get from 'lodash/get';
+
+const styles = StyleSheet.create({
+  text: {
+    fontFamily: 'Roboto-Regular',
+    fontSize: 13,
+    color: '#A8A8A8',
+  },
+});
 
 const labels = {
   walking: 'Walk',
@@ -28,7 +37,7 @@ class TimeToRestaurant extends React.Component {
     this.getTimeToRestaurant(restaurantPosition);
   }
 
-  getTimeToRestaurant = (destination) => {
+  getTimeToRestaurant = destination => {
     navigator.geolocation.getCurrentPosition(({ coords }) => {
       this.setState(
         () => ({ currentPosition: pick(coords, ['latitude', 'longitude']) }),
@@ -79,14 +88,10 @@ class TimeToRestaurant extends React.Component {
     return Object.keys(coordinates).sort().map(coordinate => coordinates[coordinate]).join(',');
   }
 
-  prioritizeTransitTimes(distances) {
+  prioritizeTransitTimes() {
+    const { walking } = this.state.distances;
     const tenMinutes = 60 * 10;
-    console.log(distances);
-    const transitModesUI =
-      distances.walking.seconds > tenMinutes ? distances : omit(distances, ['transit']);
-    return Object.keys(transitModesUI).sort(
-      (a, b) => (distances[a].seconds < distances[b].seconds ? -1 : 1),
-    );
+    return walking > tenMinutes ? ['driving', 'walking', 'transit'] : ['driving', 'transit'];
   }
 
   render() {
@@ -96,18 +101,19 @@ class TimeToRestaurant extends React.Component {
 
     return !this.state.loading
       ? <View>
-        <Text>Transportation times</Text>
-        <View style={{ flexDirection: 'row' }}>
-          {this.prioritizeTransitTimes(this.state.distances).map(transitMode => [
-            <Text>
-              {labels[transitMode]}
-            </Text>,
-            <Text>
-              {this.state.distances[transitMode].text}
-            </Text>,
-          ])}
+          <Text style={styles.text}>Transportation times</Text>
+          <View style={{ flexDirection: 'row' }}>
+            {this.prioritizeTransitTimes().map(transitMode => [
+              <Text style={[styles.text, {marginRight: 8}]}>
+                {labels[transitMode]}{' '}
+                <Text style={{color: 'black'}}>
+                  {this.state.distances[transitMode].text}
+                </Text>
+              </Text>,
+              <Text style={[styles.text, { color: 'black', marginRight: 3 }]} />,
+            ])}
+          </View>
         </View>
-      </View>
       : null;
   }
 }

@@ -140,10 +140,7 @@ class RestaurantListing extends Component {
     headerTintColor: 'white',
   };
 
-  // contentContainerStyle={{ flex: 1 }}
-
   render() {
-    // return (<Map />)
     console.log(this.props);
     const { navigation, data } = this.props;
     const { loading, error, business: restaurant } = data;
@@ -151,61 +148,82 @@ class RestaurantListing extends Component {
       return null;
     }
     const { reviews, photos, coordinates, name } = restaurant;
-    // const { restaurant } = this.props.navigation.state.params;
-    // console.log(this.props, 'data', { data });
-    // const restaurant = singleBusiness;
-    // const { photos } = restaurant;
+
     return (
       <View style={{ flex: 1, position: 'relative', paddingBottom: 80, backgroundColor: 'white' }}>
-        <ScrollView contentContainerStyle={styles.container} scrollEnabled>
+        <ScrollView
+          contentContainerStyle={styles.container}
+          scrollEnabled
+          stickyHeaderIndices={[1]}
+          showsVerticalScrollIndicator={false}
+          ref={ref => this.scrollView = ref}
+        >
           <RestaurantDetails restaurant={restaurant}>
             <OpeningHours />
             <Description />
             <Address />
             <Ratings />
           </RestaurantDetails>
-          <View style={{ flexDirection: 'row', marginTop: 25 }}>
+          <View
+            style={{
+              flex: 1,
+              borderColor: 'blue',
+              borderWidth: 1,
+            }}
+          >
             <View
               style={{
-                borderBottomWidth: 3,
-                borderBottomColor: '#17CAB1',
-                marginRight: 10,
-                paddingBottom: 2,
+                flexDirection: 'row',
+                display: 'flex',
+                flex: 1,
+                paddingVertical: 25,
+                backgroundColor: 'white',
+                borderColor: 'black',
+                borderWidth: 1,
               }}
             >
-              <Text
+              <View
                 style={{
-                  fontWeight: '400',
-                  color: '#17CAB1',
-                  fontSize: 15,
+                  borderBottomWidth: 3,
+                  borderBottomColor: '#17CAB1',
+                  marginRight: 10,
+                  paddingBottom: 2,
                 }}
               >
-                PHOTOS
-              </Text>
-            </View>
+                <Text
+                  style={{
+                    fontWeight: '400',
+                    color: '#17CAB1',
+                    fontSize: 15,
+                  }}
+                >
+                  PHOTOS
+                </Text>
+              </View>
 
-            <View
-              style={{
-                marginRight: 10,
-                paddingBottom: 2,
-              }}
-            >
-              <Text
+              <View
                 style={{
-                  fontWeight: '400',
-                  fontSize: 15,
-                  color: '#A8A8A8',
+                  marginRight: 10,
+                  paddingBottom: 2,
                 }}
               >
-                REVIEWS
-              </Text>
-            </View>
-            <View
-              style={{
-                paddingBottom: 2,
-              }}
-            >
-              <Text style={{ fontWeight: '400', fontSize: 15, color: '#A8A8A8' }}>MAP</Text>
+                <Text
+                  style={{
+                    fontWeight: '400',
+                    fontSize: 15,
+                    color: '#A8A8A8',
+                  }}
+                >
+                  REVIEWS
+                </Text>
+              </View>
+              <View
+                style={{
+                  paddingBottom: 2,
+                }}
+              >
+                <Text style={{ fontWeight: '400', fontSize: 15, color: '#A8A8A8' }}>MAP</Text>
+              </View>
             </View>
           </View>
           <ContentCard>
@@ -217,21 +235,6 @@ class RestaurantListing extends Component {
           <ContentCard>
             <Map coordinates={coordinates} name={name} />
           </ContentCard>
-          {/* <ScrollingCards
-            photos={photos}
-            renderContent={({ openPhoto }) =>
-              (<View style={{ flexDirection: 'column', alignItems: 'center', flexWrap: 'wrap' }}>
-                <ScrollView horizontal showsVerticalScrollIndicator={false} pagingEnabled>
-                  <View style={{ width, alignItems: 'center' }}>
-                    <PhotoGallery photosURIs={photos} onPhotoPress={openPhoto} />
-                  </View>
-                  <View style={{ width, alignItems: 'center' }}>
-                    <PhotoGallery photosURIs={photos} onPhotoPress={openPhoto} />
-                  </View>
-                </ScrollView>
-              </View>)
-            }
-          /> */}
         </ScrollView>
         <View
           style={{
@@ -252,7 +255,15 @@ class RestaurantListing extends Component {
               paddingTop: 10,
             }}
           >
-            <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 }}>
+            <View
+              style={{
+                flex: 1,
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                marginBottom: 10,
+              }}
+            >
               <Text style={{ fontSize: 13, color: '#A8A8A8', fontWeight: '500' }}>
                 Do you like this recommendation?
               </Text>
@@ -309,3 +320,19 @@ class RestaurantListing extends Component {
 }
 
 export default graphql(RestaurantListingQuery)(RestaurantListing);
+
+// {/* <ScrollingCards
+//   photos={photos}
+//   renderContent={({ openPhoto }) =>
+//     (<View style={{ flexDirection: 'column', alignItems: 'center', flexWrap: 'wrap' }}>
+//       <ScrollView horizontal showsVerticalScrollIndicator={false} pagingEnabled>
+//         <View style={{ width, alignItems: 'center' }}>
+//           <PhotoGallery photosURIs={photos} onPhotoPress={openPhoto} />
+//         </View>
+//         <View style={{ width, alignItems: 'center' }}>
+//           <PhotoGallery photosURIs={photos} onPhotoPress={openPhoto} />
+//         </View>
+//       </ScrollView>
+//     </View>)
+//   }
+// /> */}
