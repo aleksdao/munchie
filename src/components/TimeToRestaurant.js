@@ -32,19 +32,22 @@ class TimeToRestaurant extends React.Component {
   };
 
   componentWillMount() {
-    const { restaurantPosition } = this.props;
+    const { destinationCoordinates } = this.props;
     this.setState(() => ({ loading: true }));
-    this.getTimeToRestaurant(restaurantPosition);
+    this.getTimeToRestaurant(destinationCoordinates);
   }
 
   getTimeToRestaurant = destination => {
+    // const { coordinates: destinationCoo}
+    console.log({ destination });
     navigator.geolocation.getCurrentPosition(({ coords }) => {
       this.setState(
         () => ({ currentPosition: pick(coords, ['latitude', 'longitude']) }),
         async () => {
           console.log(this.state.currentPosition);
           const startLoc = this.stringifyCoordinates(this.state.currentPosition);
-          const destinationLoc = '40.01823, -105.27705';
+          const destinationLoc = this.stringifyCoordinates(destination);
+          console.log({ startLoc, destinationLoc });
           this.createDirectionsRequests(startLoc, destinationLoc)
             .then(([driving, transit, walking]) =>
               Promise.all([driving.json(), transit.json(), walking.json()]),
@@ -84,8 +87,10 @@ class TimeToRestaurant extends React.Component {
   }
 
   stringifyCoordinates(coordinates) {
-    // latitude, longitude
-    return Object.keys(coordinates).sort().map(coordinate => coordinates[coordinate]).join(',');
+    return Object.keys(pick(coordinates, ['latitude', 'longitude']))
+      .sort()
+      .map(coordinate => coordinates[coordinate])
+      .join(',');
   }
 
   prioritizeTransitTimes() {
@@ -99,22 +104,20 @@ class TimeToRestaurant extends React.Component {
 
     // const { enableHighAccuracy, timeout, maximumAge, onSuccess, onError } = this.props;
 
-    return !this.state.loading
-      ? <View>
-          <Text style={styles.text}>Transportation times</Text>
-          <View style={{ flexDirection: 'row' }}>
-            {this.prioritizeTransitTimes().map(transitMode => [
-              <Text style={[styles.text, {marginRight: 8}]}>
-                {labels[transitMode]}{' '}
-                <Text style={{color: 'black'}}>
-                  {this.state.distances[transitMode].text}
-                </Text>
-              </Text>,
-              <Text style={[styles.text, { color: 'black', marginRight: 3 }]} />,
-            ])}
-          </View>
+    return !this.state.loading ? (
+      <View>
+        <Text style={styles.text}>Transportation times</Text>
+        <View style={{ flexDirection: 'row' }}>
+          {this.prioritizeTransitTimes().map(transitMode => [
+            <Text style={[styles.text, { marginRight: 8 }]}>
+              {labels[transitMode]}{' '}
+              <Text style={{ color: 'black' }}>{this.state.distances[transitMode].text}</Text>
+            </Text>,
+            <Text style={[styles.text, { color: 'black', marginRight: 3 }]} />,
+          ])}
         </View>
-      : null;
+      </View>
+    ) : null;
   }
 }
 

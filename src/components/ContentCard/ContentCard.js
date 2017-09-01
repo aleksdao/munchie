@@ -1,16 +1,16 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, ScrollView } from 'react-native';
 
-function Card({ children }) {
+function Card({ children, scrolling }) {
   return (
-    <View style={styles.container}>
-      {children}
+    <View style={styles.shadowContainer}>
+        <View style={styles.nonScrollContainer}>{children}</View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  shadowContainer: {
     width: 325,
     height: 325,
     backgroundColor: 'white',
@@ -19,6 +19,15 @@ const styles = StyleSheet.create({
     shadowRadius: 10,
     shadowOffset: { width: 0, height: 10 },
     shadowOpacity: 0.3,
+    paddingBottom: 10,
+  },
+  nonScrollContainer: {
+    flex: 1,
+    // width: 325,
+    // minHeight: 325,
+    // maxHeight: 325,
+    // marginBottom: 10,
+    // overflow: 'scroll',
   },
 });
 

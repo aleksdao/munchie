@@ -97,7 +97,7 @@ function SelectRestaurantButton({ fetchRestaurants }) {
       onPress={fetchRestaurants}
     >
     <TouchableHighlight onPress={fetchRestaurants}>
-      <Text>SelectRestaurantButton</Text>
+      <AppText>Select Restaurant</AppText>
       {/* <DinDinText style={[{ textAlign: 'center', fontSize: 20, fontFamily: 'Helvetica Neue' }]}>
         Select Restaurant
       </DinDinText> */}
@@ -152,10 +152,9 @@ class HomeScreen extends Component {
   fetchRestaurants = () => {
     const { navigation } = this.props;
     // const { searchQuery } = this.state;
-    // navigation.navigate('Restaurant');
-    console.log(this.state, 1);
-    console.log(navigation);
-    navigation.navigate('Restaurant');
+
+    const restaurantQuery = 'Flip Bird'
+    navigation.navigate('Restaurant', { restaurantQuery });
     // this.fetchRestaurantsMock()
     //   .then(
     //     ({ businesses }) =>
@@ -190,8 +189,6 @@ class HomeScreen extends Component {
           <View style={styles.buttonContainer}>
             <SelectRestaurantButton fetchRestaurants={this.fetchRestaurants} />
           </View>
-          {/* <Map /> */}
-          {/* <TimeToRestaurant /> */}
         </View>
       </LinearGradient>
     );

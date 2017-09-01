@@ -38,7 +38,7 @@ class Map extends React.Component {
             <MapView.Marker coordinate={{ ...coordinates, title: singleBusiness.name }} />
           </MapView>
         </View>
-        <TimeToRestaurant />
+        <TimeToRestaurant destinationCoordinates={coordinates} />
       </View>
     );
   }

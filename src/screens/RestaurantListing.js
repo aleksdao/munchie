@@ -30,46 +30,48 @@ import PhotoGallery1 from '../components/PhotoGallery1';
 import Reviews from '../components/Reviews';
 import { colors } from '../constants';
 import singleBusiness from '../../mocks/singleBusiness.json';
-
+import businesses from '../../mocks/multipleBusinesses.json';
 const { width, height } = Dimensions.get('window');
 
 const { white, lightGrey } = colors;
 
 const RestaurantListingQuery = gql`
-  query {
-    business(id: "garaje-san-francisco") {
-      name
-      id
-      rating
-      url
-      price
-      photos
-      coordinates {
-        latitude
-        longitude
-      }
-      reviews {
+  query restaurantSearch {
+    search(location: "New York, NY", term: "fried chicken") {
+      business {
+        name
+        id
         rating
-        text
-      }
-      location {
-        formatted_address
-        address1
-        address2
-        address3
-        city
-        state
-        zip_code
-      }
-      categories {
-        title
-      }
-      hours {
-        is_open_now
-        open {
-          day
-          start
-          end
+        url
+        price
+        photos
+        coordinates {
+          latitude
+          longitude
+        }
+        reviews {
+          rating
+          text
+        }
+        location {
+          formatted_address
+          address1
+          address2
+          address3
+          city
+          state
+          zip_code
+        }
+        categories {
+          title
+        }
+        hours {
+          is_open_now
+          open {
+            day
+            start
+            end
+          }
         }
       }
     }
@@ -104,29 +106,21 @@ const styles = StyleSheet.create({
   },
 });
 
-const selections = [
-  { selection: 'Not interested', emoji: ':no_good:' },
-  { selection: 'Eat here!', emoji: ':stuck_out_tongue:' },
-  { selection: 'Choose another', emoji: ':fork_and_knife:' },
-];
-
 function UserOptions({ selections: userOptions }) {
   return (
     <View style={styles.userOptions}>
-      {selections.map(({ selection, emoji }) =>
+      {selections.map(({ selection, emoji }) => (
         <View style={styles.button}>
           <TouchableHighlight>
             <View style={{ alignItems: 'center' }}>
               <Text style={{ fontSize: 20 }}>
                 <Emoji name={emoji} />
               </Text>
-              <Text style={{ textAlign: 'center', fontSize: 10 }}>
-                {selection}
-              </Text>
+              <Text style={{ textAlign: 'center', fontSize: 10 }}>{selection}</Text>
             </View>
           </TouchableHighlight>
-        </View>,
-      )}
+        </View>
+      ))}
     </View>
   );
 }
@@ -140,23 +134,38 @@ class RestaurantListing extends Component {
     headerTintColor: 'white',
   };
 
+  scroll = () => {
+    this.scrollView._component.scrollTo();
+  };
+
+  onScroll = ({ nativeEvent }) => {
+    // console.log(nativeEvent);
+  };
+
   render() {
-    console.log(this.props);
     const { navigation, data } = this.props;
-    const { loading, error, business: restaurant } = data;
-    if (loading || error) {
-      return null;
-    }
+    // const { loading, error, } = data;
+    // if (loading || error) {
+    //   return null;
+    // }
+    console.log(this.props);
+    // const { reviews, photos, coordinates, name } = restaurant;
+    console.log(JSON.parse(JSON.stringify(businesses)))
+    // const restaurant = businesses[Math.floor(Math.random() * 20)];
+    const restaurant = businesses[10];
+    console.log({restaurant})
     const { reviews, photos, coordinates, name } = restaurant;
 
     return (
       <View style={{ flex: 1, position: 'relative', paddingBottom: 80, backgroundColor: 'white' }}>
         <ScrollView
+          onScroll={this.onScroll}
+          scrollEventThrottle={16}
           contentContainerStyle={styles.container}
           scrollEnabled
           stickyHeaderIndices={[1]}
           showsVerticalScrollIndicator={false}
-          ref={ref => this.scrollView = ref}
+          ref={ref => (this.scrollView = ref)}
         >
           <RestaurantDetails restaurant={restaurant}>
             <OpeningHours />
@@ -226,10 +235,10 @@ class RestaurantListing extends Component {
               </View>
             </View>
           </View>
-          <ContentCard>
+          <ContentCard ref={photoGallery => this.refs.photoGallery = photoGallery}>
             <PhotoGallery1 />
           </ContentCard>
-          <ContentCard>
+          <ContentCard scrolling>
             <Reviews reviews={reviews} />
           </ContentCard>
           <ContentCard>
@@ -319,7 +328,13 @@ class RestaurantListing extends Component {
   }
 }
 
-export default graphql(RestaurantListingQuery)(RestaurantListing);
+// export default graphql(RestaurantListingQuery, {
+//   options: ({ navigation: { state: { params: { restaurantQuery } } } }) => ({
+//     variables: { restaurantQuery },
+//   }),
+// })(RestaurantListing);
+
+export default RestaurantListing;
 
 // {/* <ScrollingCards
 //   photos={photos}

@@ -1,0 +1,2073 @@
+[
+  {
+    "name": "Bobwhite Counter",
+    "id": "bobwhite-counter-new-york-4",
+    "rating": 4.5,
+    "url":
+      "https://www.yelp.com/biz/bobwhite-counter-new-york-4?adjust_creative=x7LWoNv05Hf_vNeFecFImQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=x7LWoNv05Hf_vNeFecFImQ",
+    "price": "$$",
+    "photos": ["https://s3-media4.fl.yelpcdn.com/bphoto/WrQEqlqGQpRtqbZdj9BJ8g/o.jpg"],
+    "coordinates": {
+      "latitude": 40.7236015861162,
+      "longitude": -73.9790162460327,
+      "__typename": "Coordinates"
+    },
+    "reviews": [
+      {
+        "rating": 5,
+        "text":
+          "Love lOve lOve LoVe LoVe this place. It's those small and unassuming places that are the best. And I love how they don't have a huge menu. Small menu places...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 5,
+        "text":
+          "My first 5 star review. I've been to Bobwhite's more times in the past year than I'd care to admit, and it never fails to leave me amazed.\n\nI would say the...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 4,
+        "text":
+          "This is a long walk from my office and actually a long walk from any form of public transportation, but so worth it. The place is tiny so I'd imagine the...",
+        "__typename": "Review"
+      }
+    ],
+    "location": {
+      "formatted_address": "94 Ave C\nNew York, NY 10009",
+      "address1": "94 Ave C",
+      "address2": "",
+      "address3": "",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "10009",
+      "__typename": "Location"
+    },
+    "categories": [
+      {
+        "title": "Southern",
+        "__typename": "Category"
+      },
+      {
+        "title": "Comfort Food",
+        "__typename": "Category"
+      },
+      {
+        "title": "Beer, Wine & Spirits",
+        "__typename": "Category"
+      }
+    ],
+    "hours": [
+      {
+        "is_open_now": true,
+        "open": [
+          {
+            "day": 0,
+            "start": "1500",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 1,
+            "start": "1200",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 2,
+            "start": "0800",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 3,
+            "start": "0800",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 4,
+            "start": "0800",
+            "end": "2300",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 5,
+            "start": "0900",
+            "end": "2300",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 6,
+            "start": "0900",
+            "end": "2200",
+            "__typename": "OpenHours"
+          }
+        ],
+        "__typename": "Hours"
+      }
+    ],
+    "__typename": "Business"
+  },
+  {
+    "name": "Pies-n-Thighs",
+    "id": "pies-n-thighs-brooklyn",
+    "rating": 4.0,
+    "url":
+      "https://www.yelp.com/biz/pies-n-thighs-brooklyn?adjust_creative=x7LWoNv05Hf_vNeFecFImQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=x7LWoNv05Hf_vNeFecFImQ",
+    "price": "$$",
+    "photos": ["https://s3-media3.fl.yelpcdn.com/bphoto/ZEox6v_ipIvcrzeRv9mFIA/o.jpg"],
+    "coordinates": {
+      "latitude": 40.711191,
+      "longitude": -73.961424,
+      "__typename": "Coordinates"
+    },
+    "reviews": [
+      {
+        "rating": 5,
+        "text":
+          "Pies 'n' Thighs is a fried chicken joint serving up all those Southern specialty plates you'd expect and want. The spot is usually busy so you might have to...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 5,
+        "text":
+          "I love me some fried chicken and waffles. Came here on a Thursday night just before closing. The staff was awesome and very accommodating. Didn't rush us...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 5,
+        "text":
+          "My friend said, \"Let's go to Pies-n-Thighs.\" \nI said \"Ugh is there anywhere else we can go instead I don't know about going there.\" \n\nAfter a bit of...",
+        "__typename": "Review"
+      }
+    ],
+    "location": {
+      "formatted_address": "166 S 4th St\nBrooklyn, NY 11211",
+      "address1": "166 S 4th St",
+      "address2": null,
+      "address3": "",
+      "city": "Brooklyn",
+      "state": "NY",
+      "zip_code": "11211",
+      "__typename": "Location"
+    },
+    "categories": [
+      {
+        "title": "Southern",
+        "__typename": "Category"
+      },
+      {
+        "title": "Barbeque",
+        "__typename": "Category"
+      },
+      {
+        "title": "Breakfast & Brunch",
+        "__typename": "Category"
+      }
+    ],
+    "hours": [
+      {
+        "is_open_now": true,
+        "open": [
+          {
+            "day": 0,
+            "start": "0900",
+            "end": "0000",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 1,
+            "start": "0900",
+            "end": "0000",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 2,
+            "start": "0900",
+            "end": "0000",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 3,
+            "start": "0900",
+            "end": "0000",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 4,
+            "start": "0900",
+            "end": "0000",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 5,
+            "start": "1000",
+            "end": "0000",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 6,
+            "start": "1000",
+            "end": "0000",
+            "__typename": "OpenHours"
+          }
+        ],
+        "__typename": "Hours"
+      }
+    ],
+    "__typename": "Business"
+  },
+  {
+    "name": "Root & Bone",
+    "id": "root-and-bone-new-york",
+    "rating": 4.0,
+    "url":
+      "https://www.yelp.com/biz/root-and-bone-new-york?adjust_creative=x7LWoNv05Hf_vNeFecFImQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=x7LWoNv05Hf_vNeFecFImQ",
+    "price": "$$",
+    "photos": ["https://s3-media3.fl.yelpcdn.com/bphoto/i0T2LAr6CJbWy4IRf1Ojkw/o.jpg"],
+    "coordinates": {
+      "latitude": 40.72272,
+      "longitude": -73.98334,
+      "__typename": "Coordinates"
+    },
+    "reviews": [
+      {
+        "rating": 4,
+        "text":
+          "Came here for restaurant week lunch and it was a great experience! We reserved for a later lunch time (around 3pm) so it was a nice and laid back...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 3,
+        "text":
+          "I think I might have higher expectation on Root & Bone so was a bit disappointed when I finally tried it out over the weekend. \n\nInitially came across Root...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 3,
+        "text":
+          "Visited Root & Bone with my sister last weekend and must say I have really mixed feelings! The service and ambiance were great and the Restaurant Week menu...",
+        "__typename": "Review"
+      }
+    ],
+    "location": {
+      "formatted_address": "200 E 3rd St\nNew York, NY 10009",
+      "address1": "200 E 3rd St",
+      "address2": "",
+      "address3": "",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "10009",
+      "__typename": "Location"
+    },
+    "categories": [
+      {
+        "title": "Southern",
+        "__typename": "Category"
+      },
+      {
+        "title": "Comfort Food",
+        "__typename": "Category"
+      },
+      {
+        "title": "Desserts",
+        "__typename": "Category"
+      }
+    ],
+    "hours": [
+      {
+        "is_open_now": true,
+        "open": [
+          {
+            "day": 0,
+            "start": "1130",
+            "end": "2230",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 1,
+            "start": "1130",
+            "end": "2230",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 2,
+            "start": "1130",
+            "end": "2230",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 3,
+            "start": "1130",
+            "end": "2230",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 4,
+            "start": "1130",
+            "end": "2330",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 5,
+            "start": "1030",
+            "end": "2330",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 6,
+            "start": "1030",
+            "end": "2230",
+            "__typename": "OpenHours"
+          }
+        ],
+        "__typename": "Hours"
+      }
+    ],
+    "__typename": "Business"
+  },
+  {
+    "name": "Blue Ribbon Fried Chicken",
+    "id": "blue-ribbon-fried-chicken-new-york",
+    "rating": 3.5,
+    "url":
+      "https://www.yelp.com/biz/blue-ribbon-fried-chicken-new-york?adjust_creative=x7LWoNv05Hf_vNeFecFImQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=x7LWoNv05Hf_vNeFecFImQ",
+    "price": "$$",
+    "photos": ["https://s3-media4.fl.yelpcdn.com/bphoto/fr7BMsgmvEIO2UCKz3kkEQ/o.jpg"],
+    "coordinates": {
+      "latitude": 40.7242586,
+      "longitude": -73.9908082,
+      "__typename": "Coordinates"
+    },
+    "reviews": [
+      {
+        "rating": 4,
+        "text":
+          "I follow brunch boys on IG and came across a post about this place! I HADDDD TO make it in!\nMy husband works in Chelsea so after picking him up from work we...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 3,
+        "text":
+          "There's different levels of chicken, just like anything else. As much as I loved the Salvation Burger @ almost $30, I equally love a good White Castle crave...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 2,
+        "text":
+          "This is a dressed up fast food spot - think Popeyes with beer, wine and good 90's music.\n\nI only wish the chicken was as good as Popeyes.  It was bland so I...",
+        "__typename": "Review"
+      }
+    ],
+    "location": {
+      "formatted_address": "28 E 1st St\nNew York, NY 10003",
+      "address1": "28 E 1st St",
+      "address2": null,
+      "address3": "",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "10003",
+      "__typename": "Location"
+    },
+    "categories": [
+      {
+        "title": "Chicken Wings",
+        "__typename": "Category"
+      },
+      {
+        "title": "Soul Food",
+        "__typename": "Category"
+      },
+      {
+        "title": "Sandwiches",
+        "__typename": "Category"
+      }
+    ],
+    "hours": [
+      {
+        "is_open_now": true,
+        "open": [
+          {
+            "day": 0,
+            "start": "1100",
+            "end": "0200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 1,
+            "start": "1100",
+            "end": "0200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 2,
+            "start": "1100",
+            "end": "0200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 3,
+            "start": "1100",
+            "end": "0200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 4,
+            "start": "1100",
+            "end": "0200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 5,
+            "start": "1100",
+            "end": "0200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 6,
+            "start": "1100",
+            "end": "0200",
+            "__typename": "OpenHours"
+          }
+        ],
+        "__typename": "Hours"
+      }
+    ],
+    "__typename": "Business"
+  },
+  {
+    "name": "Wilma Jean",
+    "id": "wilma-jean-brooklyn",
+    "rating": 4.0,
+    "url":
+      "https://www.yelp.com/biz/wilma-jean-brooklyn?adjust_creative=x7LWoNv05Hf_vNeFecFImQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=x7LWoNv05Hf_vNeFecFImQ",
+    "price": "$$",
+    "photos": ["https://s3-media4.fl.yelpcdn.com/bphoto/MQDXjpHeFrpXEYkgg5_xFQ/o.jpg"],
+    "coordinates": {
+      "latitude": 40.6799264543837,
+      "longitude": -73.994771465775,
+      "__typename": "Coordinates"
+    },
+    "reviews": [
+      {
+        "rating": 5,
+        "text":
+          "Chilleeeeeeee. This place, let. me. tell. YOU! I give it a 5/5 for the simple fact the chicken's skin tasted like it was marinated in seasoning before...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 2,
+        "text":
+          "I am a local customer.  The food here is pretty good however this suffers from staff \nThat are pretty unpleasant to rude. The location is nice with big...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 4,
+        "text":
+          "Wowwww! Sometimes I bookmark things and forget about them entirely until I see it on Yelp again. Wilma Jean was such a place.\n\nI was in Flatiron and...",
+        "__typename": "Review"
+      }
+    ],
+    "location": {
+      "formatted_address": "345 Smith St\nBrooklyn, NY 11231",
+      "address1": "345 Smith St",
+      "address2": "",
+      "address3": "",
+      "city": "Brooklyn",
+      "state": "NY",
+      "zip_code": "11231",
+      "__typename": "Location"
+    },
+    "categories": [
+      {
+        "title": "Southern",
+        "__typename": "Category"
+      }
+    ],
+    "hours": [
+      {
+        "is_open_now": true,
+        "open": [
+          {
+            "day": 0,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 1,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 2,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 3,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 4,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 5,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 6,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          }
+        ],
+        "__typename": "Hours"
+      }
+    ],
+    "__typename": "Business"
+  },
+  {
+    "name": "Sweet Chick",
+    "id": "sweet-chick-new-york",
+    "rating": 4.0,
+    "url":
+      "https://www.yelp.com/biz/sweet-chick-new-york?adjust_creative=x7LWoNv05Hf_vNeFecFImQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=x7LWoNv05Hf_vNeFecFImQ",
+    "price": "$$",
+    "photos": ["https://s3-media1.fl.yelpcdn.com/bphoto/2OGtgpC5YYEZ2yOF93o45g/o.jpg"],
+    "coordinates": {
+      "latitude": 40.7217399,
+      "longitude": -73.98739,
+      "__typename": "Coordinates"
+    },
+    "reviews": [
+      {
+        "rating": 5,
+        "text":
+          "My boyfriend and I were in town for the night and had a late dinner here. It was a Sunday night, so we were surprised it was open until 2am! When we arrived...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 4,
+        "text":
+          "This place has a warm and cozy feel to it and has great food but, the service was a bit iffy. Our waiter was a little odd and seem to not know the menu that...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 2,
+        "text":
+          "+ hot chicken was pretty darn good.\n- fried chicken is mediocre\n- mashed potatoes (how do you make subpar mashed potatoes)\n- vanilla ice cream tasted as if...",
+        "__typename": "Review"
+      }
+    ],
+    "location": {
+      "formatted_address": "178 Ludlow St\nNew York, NY 10002",
+      "address1": "178 Ludlow St",
+      "address2": "",
+      "address3": "",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "10002",
+      "__typename": "Location"
+    },
+    "categories": [
+      {
+        "title": "Southern",
+        "__typename": "Category"
+      },
+      {
+        "title": "Breakfast & Brunch",
+        "__typename": "Category"
+      },
+      {
+        "title": "American (Traditional)",
+        "__typename": "Category"
+      }
+    ],
+    "hours": [
+      {
+        "is_open_now": true,
+        "open": [
+          {
+            "day": 0,
+            "start": "1100",
+            "end": "0200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 1,
+            "start": "1100",
+            "end": "0200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 2,
+            "start": "1100",
+            "end": "0200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 3,
+            "start": "1100",
+            "end": "0200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 4,
+            "start": "1100",
+            "end": "0200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 5,
+            "start": "1000",
+            "end": "0200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 6,
+            "start": "1000",
+            "end": "0200",
+            "__typename": "OpenHours"
+          }
+        ],
+        "__typename": "Hours"
+      }
+    ],
+    "__typename": "Business"
+  },
+  {
+    "name": "Peaches HotHouse",
+    "id": "peaches-hothouse-brooklyn",
+    "rating": 4.0,
+    "url":
+      "https://www.yelp.com/biz/peaches-hothouse-brooklyn?adjust_creative=x7LWoNv05Hf_vNeFecFImQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=x7LWoNv05Hf_vNeFecFImQ",
+    "price": "$$",
+    "photos": ["https://s3-media1.fl.yelpcdn.com/bphoto/QkbXdv80-lGYeO312B5KYA/o.jpg"],
+    "coordinates": {
+      "latitude": 40.6833699737169,
+      "longitude": -73.9437798410654,
+      "__typename": "Coordinates"
+    },
+    "reviews": [
+      {
+        "rating": 5,
+        "text":
+          "Wow this fried chicken is no joke! I came here on Sunday for Brunch at around 2PM. I waited about 20 minutes? You write your name on a board inside. \n\nThe...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 3,
+        "text":
+          "UGHHHH I really wanted to love this place. I was obsessing over it for an entire week, scouring  and partially memorizing their menu cause I wanted to go so...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 5,
+        "text":
+          "I have to give this place 5 stars because I'm not a huge fried chicken fan and this place had the best fried chicken I have ever tasted. I like spicy and it...",
+        "__typename": "Review"
+      }
+    ],
+    "location": {
+      "formatted_address": "415 Tompkins Ave\nBrooklyn, NY 11216",
+      "address1": "415 Tompkins Ave",
+      "address2": "",
+      "address3": "",
+      "city": "Brooklyn",
+      "state": "NY",
+      "zip_code": "11216",
+      "__typename": "Location"
+    },
+    "categories": [
+      {
+        "title": "Southern",
+        "__typename": "Category"
+      },
+      {
+        "title": "American (Traditional)",
+        "__typename": "Category"
+      },
+      {
+        "title": "Bars",
+        "__typename": "Category"
+      }
+    ],
+    "hours": [
+      {
+        "is_open_now": true,
+        "open": [
+          {
+            "day": 0,
+            "start": "1100",
+            "end": "2300",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 1,
+            "start": "1100",
+            "end": "2300",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 2,
+            "start": "1100",
+            "end": "2300",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 3,
+            "start": "1100",
+            "end": "2300",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 4,
+            "start": "1100",
+            "end": "2300",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 5,
+            "start": "1000",
+            "end": "2300",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 6,
+            "start": "1000",
+            "end": "2300",
+            "__typename": "OpenHours"
+          }
+        ],
+        "__typename": "Hours"
+      }
+    ],
+    "__typename": "Business"
+  },
+  {
+    "name": "33 Greenwich",
+    "id": "33-greenwich-new-york-4",
+    "rating": 4.5,
+    "url":
+      "https://www.yelp.com/biz/33-greenwich-new-york-4?adjust_creative=x7LWoNv05Hf_vNeFecFImQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=x7LWoNv05Hf_vNeFecFImQ",
+    "price": "$$$",
+    "photos": ["https://s3-media2.fl.yelpcdn.com/bphoto/6DM24A4b5zxpZHfbmk180g/o.jpg"],
+    "coordinates": {
+      "latitude": 40.73491,
+      "longitude": -74.00032,
+      "__typename": "Coordinates"
+    },
+    "reviews": [
+      {
+        "rating": 5,
+        "text":
+          "Took my husband here for his bday coz he LOVES short ribs. It was off the chain! They were so crispy outside and the meat is so juicy and soft. I also like...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 5,
+        "text":
+          "The food is soooo delicious and their drinks are just as good!\n\nTheir brunch options are filling! The French Toast had that nice custard bite that tasted so...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 3,
+        "text":
+          "\"Eh, pretty good\" was the feeling after eating at this pricey and elegant new southern spot. \n\nGot the fried chicken for 2 feast for $55 that comes with 6...",
+        "__typename": "Review"
+      }
+    ],
+    "location": {
+      "formatted_address": "33 Greenwich Ave\nNew York, NY 10014",
+      "address1": "33 Greenwich Ave",
+      "address2": "",
+      "address3": null,
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "10014",
+      "__typename": "Location"
+    },
+    "categories": [
+      {
+        "title": "American (New)",
+        "__typename": "Category"
+      },
+      {
+        "title": "Southern",
+        "__typename": "Category"
+      }
+    ],
+    "hours": [
+      {
+        "is_open_now": false,
+        "open": [
+          {
+            "day": 0,
+            "start": "1730",
+            "end": "0000",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 1,
+            "start": "1730",
+            "end": "0000",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 2,
+            "start": "1730",
+            "end": "0000",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 3,
+            "start": "1730",
+            "end": "0000",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 4,
+            "start": "1730",
+            "end": "0100",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 5,
+            "start": "1100",
+            "end": "1600",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 5,
+            "start": "1730",
+            "end": "0000",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 6,
+            "start": "1100",
+            "end": "0000",
+            "__typename": "OpenHours"
+          }
+        ],
+        "__typename": "Hours"
+      }
+    ],
+    "__typename": "Business"
+  },
+  {
+    "name": "Turntable Chicken Jazz",
+    "id": "turntable-chicken-jazz-new-york-2",
+    "rating": 4.0,
+    "url":
+      "https://www.yelp.com/biz/turntable-chicken-jazz-new-york-2?adjust_creative=x7LWoNv05Hf_vNeFecFImQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=x7LWoNv05Hf_vNeFecFImQ",
+    "price": "$$",
+    "photos": ["https://s3-media1.fl.yelpcdn.com/bphoto/226oa9YsivDu6AOFvnT3pQ/o.jpg"],
+    "coordinates": {
+      "latitude": 40.74828,
+      "longitude": -73.98649,
+      "__typename": "Coordinates"
+    },
+    "reviews": [
+      {
+        "rating": 5,
+        "text":
+          "With a name like Turntable Jazz Chicken, you know it's going to be good. \n\nThe name almost sounds like a password for a speakeasy. It kind of applies...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 1,
+        "text":
+          "Do not get the seafood ramen or any kind of ramen here. My bad for getting it at a chicken place but I thought it would be 1/2 way ok, but it's terrible....",
+        "__typename": "Review"
+      },
+      {
+        "rating": 3,
+        "text":
+          "Came here for a spur of the moment karaoke fix with my coworkers and while I had a great time, there are definitely better places in the city. It's located...",
+        "__typename": "Review"
+      }
+    ],
+    "location": {
+      "formatted_address": "20W 33rd St\nNew York, NY 10001",
+      "address1": "20W 33rd St",
+      "address2": "",
+      "address3": "",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "10001",
+      "__typename": "Location"
+    },
+    "categories": [
+      {
+        "title": "Chicken Wings",
+        "__typename": "Category"
+      },
+      {
+        "title": "Korean",
+        "__typename": "Category"
+      }
+    ],
+    "hours": [
+      {
+        "is_open_now": true,
+        "open": [
+          {
+            "day": 0,
+            "start": "1200",
+            "end": "0200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 1,
+            "start": "1200",
+            "end": "0200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 2,
+            "start": "1200",
+            "end": "0200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 3,
+            "start": "1200",
+            "end": "0300",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 4,
+            "start": "1200",
+            "end": "0400",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 5,
+            "start": "1200",
+            "end": "0400",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 6,
+            "start": "1200",
+            "end": "0100",
+            "__typename": "OpenHours"
+          }
+        ],
+        "__typename": "Hours"
+      }
+    ],
+    "__typename": "Business"
+  },
+  {
+    "name": "Captain Fried Chicken",
+    "id": "captain-fried-chicken-new-york",
+    "rating": 4.0,
+    "url":
+      "https://www.yelp.com/biz/captain-fried-chicken-new-york?adjust_creative=x7LWoNv05Hf_vNeFecFImQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=x7LWoNv05Hf_vNeFecFImQ",
+    "price": "$",
+    "photos": ["https://s3-media4.fl.yelpcdn.com/bphoto/XHVHYVtSR2HAOseKoYf8FQ/o.jpg"],
+    "coordinates": {
+      "latitude": 40.7120094,
+      "longitude": -73.9985962,
+      "__typename": "Coordinates"
+    },
+    "reviews": [
+      {
+        "rating": 4,
+        "text":
+          "Well I went back to work for city and wanted some fries in a box. Glad this place was close to my job site. Yea fried chicken wings and those crunchy French...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 3,
+        "text":
+          "It's the way that I'm giving this restaurant three stars and there's a good reason behind it because there are no seats in this captain chicken restaurant...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 2,
+        "text":
+          "Low quality food for a low price. Come here when your high and looking for some wings like everyone else. It's only when your high that you won't notice the...",
+        "__typename": "Review"
+      }
+    ],
+    "location": {
+      "formatted_address": "39 Madison St\nNew York, NY 10038",
+      "address1": "39 Madison St",
+      "address2": "",
+      "address3": "",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "10038",
+      "__typename": "Location"
+    },
+    "categories": [
+      {
+        "title": "Chicken Wings",
+        "__typename": "Category"
+      }
+    ],
+    "hours": [],
+    "__typename": "Business"
+  },
+  {
+    "name": "Pretty Southern",
+    "id": "pretty-southern-brooklyn",
+    "rating": 4.0,
+    "url":
+      "https://www.yelp.com/biz/pretty-southern-brooklyn?adjust_creative=x7LWoNv05Hf_vNeFecFImQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=x7LWoNv05Hf_vNeFecFImQ",
+    "price": "$$",
+    "photos": ["https://s3-media2.fl.yelpcdn.com/bphoto/LzDd1mXq31Hk-z68RqOamA/o.jpg"],
+    "coordinates": {
+      "latitude": 40.7238159179688,
+      "longitude": -73.9515533447266,
+      "__typename": "Coordinates"
+    },
+    "reviews": [
+      {
+        "rating": 5,
+        "text":
+          "Fried chicken biscuit?\nCheck.\n\nBacon, egg and pimento cheese?\nAnother check.\n\nMacaroni and cheese?\nTriple check.\n\nHasbrown thar are fried in a waffle...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 4,
+        "text":
+          "Nicely decorated little spot, including a covered patio in the back. The friendly owner is usually behind the bar greeting customers and chatting with them....",
+        "__typename": "Review"
+      },
+      {
+        "rating": 4,
+        "text":
+          "As a born and bred Texan, I consider myself to be Pretty Southern. The fried chicken and biscuits here did not disappoint! \n\nThe chicken was juicy and skin...",
+        "__typename": "Review"
+      }
+    ],
+    "location": {
+      "formatted_address": "14 Bedford Ave\nBrooklyn, NY 11237",
+      "address1": "14 Bedford Ave",
+      "address2": "",
+      "address3": null,
+      "city": "Brooklyn",
+      "state": "NY",
+      "zip_code": "11237",
+      "__typename": "Location"
+    },
+    "categories": [
+      {
+        "title": "Southern",
+        "__typename": "Category"
+      },
+      {
+        "title": "Salad",
+        "__typename": "Category"
+      },
+      {
+        "title": "Sandwiches",
+        "__typename": "Category"
+      }
+    ],
+    "hours": [
+      {
+        "is_open_now": true,
+        "open": [
+          {
+            "day": 1,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 2,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 3,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 4,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 5,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 6,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          }
+        ],
+        "__typename": "Hours"
+      }
+    ],
+    "__typename": "Business"
+  },
+  {
+    "name": "Wangs",
+    "id": "wangs-brooklyn",
+    "rating": 4.0,
+    "url":
+      "https://www.yelp.com/biz/wangs-brooklyn?adjust_creative=x7LWoNv05Hf_vNeFecFImQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=x7LWoNv05Hf_vNeFecFImQ",
+    "price": "$$",
+    "photos": ["https://s3-media2.fl.yelpcdn.com/bphoto/Y5VY7PI64j7iOH5gr7sgJQ/o.jpg"],
+    "coordinates": {
+      "latitude": 40.6772587448359,
+      "longitude": -73.9825364202261,
+      "__typename": "Coordinates"
+    },
+    "reviews": [
+      {
+        "rating": 4,
+        "text":
+          "Good wings. Expected something greatly different from Korean style wings but not really. Still good but pricey, even compared to Korean fried chicken. \n\nHad...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 4,
+        "text":
+          "When you first hear the name \"Wangs\" fried chicken probably does not come to mind, nor does it look like much from the outside (only a walk up window and...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 3,
+        "text":
+          "First the good: the person who took my order was really nice.\n\nThe meh: the sandwich and the mac n cheese. The sandwich cost $13. Granted, it was large, but...",
+        "__typename": "Review"
+      }
+    ],
+    "location": {
+      "formatted_address": "671 Union St\nBrooklyn, NY 11215",
+      "address1": "671 Union St",
+      "address2": "",
+      "address3": "",
+      "city": "Brooklyn",
+      "state": "NY",
+      "zip_code": "11215",
+      "__typename": "Location"
+    },
+    "categories": [
+      {
+        "title": "Chicken Wings",
+        "__typename": "Category"
+      },
+      {
+        "title": "Asian Fusion",
+        "__typename": "Category"
+      },
+      {
+        "title": "Soul Food",
+        "__typename": "Category"
+      }
+    ],
+    "hours": [
+      {
+        "is_open_now": false,
+        "open": [
+          {
+            "day": 0,
+            "start": "1230",
+            "end": "2300",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 1,
+            "start": "1230",
+            "end": "2300",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 2,
+            "start": "1230",
+            "end": "2300",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 3,
+            "start": "1230",
+            "end": "2300",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 4,
+            "start": "1230",
+            "end": "2300",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 5,
+            "start": "1230",
+            "end": "2300",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 6,
+            "start": "1230",
+            "end": "2200",
+            "__typename": "OpenHours"
+          }
+        ],
+        "__typename": "Hours"
+      }
+    ],
+    "__typename": "Business"
+  },
+  {
+    "name": "The Commodore",
+    "id": "the-commodore-brooklyn",
+    "rating": 4.0,
+    "url":
+      "https://www.yelp.com/biz/the-commodore-brooklyn?adjust_creative=x7LWoNv05Hf_vNeFecFImQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=x7LWoNv05Hf_vNeFecFImQ",
+    "price": "$$",
+    "photos": ["https://s3-media3.fl.yelpcdn.com/bphoto/GKnX1ELv8aoFwuUIqyIssw/o.jpg"],
+    "coordinates": {
+      "latitude": 40.7138257110445,
+      "longitude": -73.9556050300598,
+      "__typename": "Coordinates"
+    },
+    "reviews": [
+      {
+        "rating": 5,
+        "text":
+          "Not that this place needs another 5 star review but god damn was this place delicious.\n\nWhen you first walk in it feels like you are stepping into someone's...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 4,
+        "text":
+          "I had this place bookmarked because I'd read the accolades of their fried chicken. Went on 4th of July as a last resort because other places were too...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 4,
+        "text":
+          "The Commodore seems to show up as the wildcard on a few of those \"best chicken sandwich\" lists, so I had to give it a shot. As a staunch hater of the whole...",
+        "__typename": "Review"
+      }
+    ],
+    "location": {
+      "formatted_address": "366 Metropolitan Ave\nBrooklyn, NY 11211",
+      "address1": "366 Metropolitan Ave",
+      "address2": "",
+      "address3": "",
+      "city": "Brooklyn",
+      "state": "NY",
+      "zip_code": "11211",
+      "__typename": "Location"
+    },
+    "categories": [
+      {
+        "title": "Bars",
+        "__typename": "Category"
+      },
+      {
+        "title": "American (Traditional)",
+        "__typename": "Category"
+      },
+      {
+        "title": "Sandwiches",
+        "__typename": "Category"
+      }
+    ],
+    "hours": [
+      {
+        "is_open_now": false,
+        "open": [
+          {
+            "day": 0,
+            "start": "1600",
+            "end": "0400",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 1,
+            "start": "1600",
+            "end": "0400",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 2,
+            "start": "1600",
+            "end": "0400",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 3,
+            "start": "1600",
+            "end": "0400",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 4,
+            "start": "1600",
+            "end": "0400",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 5,
+            "start": "1100",
+            "end": "0400",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 6,
+            "start": "1100",
+            "end": "0400",
+            "__typename": "OpenHours"
+          }
+        ],
+        "__typename": "Hours"
+      }
+    ],
+    "__typename": "Business"
+  },
+  {
+    "name": "Hill Country Chicken",
+    "id": "hill-country-chicken-new-york",
+    "rating": 3.5,
+    "url":
+      "https://www.yelp.com/biz/hill-country-chicken-new-york?adjust_creative=x7LWoNv05Hf_vNeFecFImQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=x7LWoNv05Hf_vNeFecFImQ",
+    "price": "$$",
+    "photos": ["https://s3-media4.fl.yelpcdn.com/bphoto/plqJhfRoJ4PgP2cyXduDWw/o.jpg"],
+    "coordinates": {
+      "latitude": 40.743254,
+      "longitude": -73.98934,
+      "__typename": "Coordinates"
+    },
+    "reviews": [
+      {
+        "rating": 5,
+        "text":
+          "How can you go wrong with REAL country fried chicken, handout fries, homemade biscuits & Boylan's Dodson tap...? You can't - it satisfies the cravings for...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 4,
+        "text":
+          "Once upon a time, three co-workers and I were walking back to the office from lunch. I don't remember everything that was said word for word, but this is a...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 3,
+        "text":
+          "FREE PIE CUP! Caught your attention? I was able to get a free pie cup with a check-in. The pie cups are amazing! They have many flavors and honestly all of...",
+        "__typename": "Review"
+      }
+    ],
+    "location": {
+      "formatted_address": "1123 Broadway\nNew York, NY 10010",
+      "address1": "1123 Broadway",
+      "address2": "",
+      "address3": "",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "10010",
+      "__typename": "Location"
+    },
+    "categories": [
+      {
+        "title": "Southern",
+        "__typename": "Category"
+      },
+      {
+        "title": "Chicken Wings",
+        "__typename": "Category"
+      }
+    ],
+    "hours": [
+      {
+        "is_open_now": true,
+        "open": [
+          {
+            "day": 0,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 1,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 2,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 3,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 4,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 5,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 6,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          }
+        ],
+        "__typename": "Hours"
+      }
+    ],
+    "__typename": "Business"
+  },
+  {
+    "name": "BeeHive Oven Biscuit Cafe",
+    "id": "beehive-oven-biscuit-cafe-brooklyn",
+    "rating": 4.5,
+    "url":
+      "https://www.yelp.com/biz/beehive-oven-biscuit-cafe-brooklyn?adjust_creative=x7LWoNv05Hf_vNeFecFImQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=x7LWoNv05Hf_vNeFecFImQ",
+    "price": "$$",
+    "photos": ["https://s3-media1.fl.yelpcdn.com/bphoto/Wke-gXHrlOR01qdo-jDKrQ/o.jpg"],
+    "coordinates": {
+      "latitude": 40.7125678,
+      "longitude": -73.9604523,
+      "__typename": "Coordinates"
+    },
+    "reviews": [
+      {
+        "rating": 5,
+        "text":
+          "when you need to satisfy a craving for southern cooking at its best look no further and come eat at the Beehive. This is the place that will tickle your...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 4,
+        "text":
+          "Cool little spot where we ate breakfast this morning. Staff was friendly and accommodating to our needs, which can be many since we have a toddler. The...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 2,
+        "text":
+          "Used to love this place, but it's under new management, and the new owners are going to drive this place right into the ground. Killed the once inviting...",
+        "__typename": "Review"
+      }
+    ],
+    "location": {
+      "formatted_address": "182 S 2nd St\nBrooklyn, NY 11211",
+      "address1": "182 S 2nd St",
+      "address2": "",
+      "address3": "",
+      "city": "Brooklyn",
+      "state": "NY",
+      "zip_code": "11211",
+      "__typename": "Location"
+    },
+    "categories": [
+      {
+        "title": "Southern",
+        "__typename": "Category"
+      },
+      {
+        "title": "Cajun/Creole",
+        "__typename": "Category"
+      },
+      {
+        "title": "Breakfast & Brunch",
+        "__typename": "Category"
+      }
+    ],
+    "hours": [
+      {
+        "is_open_now": true,
+        "open": [
+          {
+            "day": 1,
+            "start": "0800",
+            "end": "1700",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 2,
+            "start": "0800",
+            "end": "1700",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 3,
+            "start": "0800",
+            "end": "1700",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 4,
+            "start": "0800",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 5,
+            "start": "1000",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 6,
+            "start": "1000",
+            "end": "1700",
+            "__typename": "OpenHours"
+          }
+        ],
+        "__typename": "Hours"
+      }
+    ],
+    "__typename": "Business"
+  },
+  {
+    "name": "Sweet Chick",
+    "id": "sweet-chick-brooklyn",
+    "rating": 4.0,
+    "url":
+      "https://www.yelp.com/biz/sweet-chick-brooklyn?adjust_creative=x7LWoNv05Hf_vNeFecFImQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=x7LWoNv05Hf_vNeFecFImQ",
+    "price": "$$",
+    "photos": ["https://s3-media3.fl.yelpcdn.com/bphoto/-B7HnMZQQh1MemYmypaJ0Q/o.jpg"],
+    "coordinates": {
+      "latitude": 40.718423,
+      "longitude": -73.9574279,
+      "__typename": "Coordinates"
+    },
+    "reviews": [
+      {
+        "rating": 5,
+        "text":
+          "My sister and I decided to come here for brunch on a Wednesday around 1PM. The wait was only 15-20 minutes, which isn't bad at all. The hostess was very...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 4,
+        "text":
+          "Food arrives considerable fast and fresh..i got the fan favorite chicken and waffles with an apples and cinnamon in the batter. I treated myself to an iced...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 4,
+        "text":
+          "Amazing waffles, solid chicken, and comfortable atmosphere. Gets packed often so go early!\n\nWaffles are some of the best I have had, and they come in a...",
+        "__typename": "Review"
+      }
+    ],
+    "location": {
+      "formatted_address": "164 Bedford Ave\nBrooklyn, NY 11211",
+      "address1": "164 Bedford Ave",
+      "address2": "",
+      "address3": "",
+      "city": "Brooklyn",
+      "state": "NY",
+      "zip_code": "11211",
+      "__typename": "Location"
+    },
+    "categories": [
+      {
+        "title": "Southern",
+        "__typename": "Category"
+      },
+      {
+        "title": "Breakfast & Brunch",
+        "__typename": "Category"
+      },
+      {
+        "title": "Desserts",
+        "__typename": "Category"
+      }
+    ],
+    "hours": [
+      {
+        "is_open_now": true,
+        "open": [
+          {
+            "day": 0,
+            "start": "1100",
+            "end": "0200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 1,
+            "start": "1100",
+            "end": "0200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 2,
+            "start": "1100",
+            "end": "0200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 3,
+            "start": "1100",
+            "end": "0200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 4,
+            "start": "1100",
+            "end": "0200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 5,
+            "start": "1000",
+            "end": "0200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 6,
+            "start": "1000",
+            "end": "0200",
+            "__typename": "OpenHours"
+          }
+        ],
+        "__typename": "Hours"
+      }
+    ],
+    "__typename": "Business"
+  },
+  {
+    "name": "Butterfunk Kitchen",
+    "id": "butterfunk-kitchen-windsor-terrace-2",
+    "rating": 4.0,
+    "url":
+      "https://www.yelp.com/biz/butterfunk-kitchen-windsor-terrace-2?adjust_creative=x7LWoNv05Hf_vNeFecFImQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=x7LWoNv05Hf_vNeFecFImQ",
+    "price": "$$",
+    "photos": ["https://s3-media3.fl.yelpcdn.com/bphoto/c1a_VWtLMIvIj8zZVPg6kA/o.jpg"],
+    "coordinates": {
+      "latitude": 40.6516158584298,
+      "longitude": -73.9757995286712,
+      "__typename": "Coordinates"
+    },
+    "reviews": [
+      {
+        "rating": 5,
+        "text":
+          "Thoroughly enjoyed the fried chicken best I've had since being in NY its seasoned so well. \n\nBiscuits are very yummy and even better with no spread. \n\nMac &...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 4,
+        "text":
+          "+++\n- Plenty portion (One portion provides at least one other left over portion)\n- Mac n Cheese was amazing city!\n\n++\n- Love the decoration, soundtrack\n-...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 3,
+        "text":
+          "I'm a little disappointed with this supposed neighborhood gem. \n\nI came here on a Saturday evening at 6 PM and had to wait 30 minutes to get seated. The...",
+        "__typename": "Review"
+      }
+    ],
+    "location": {
+      "formatted_address": "1295 Prospect Ave\nWindsor Terrace, NY 11218",
+      "address1": "1295 Prospect Ave",
+      "address2": "",
+      "address3": "",
+      "city": "Windsor Terrace",
+      "state": "NY",
+      "zip_code": "11218",
+      "__typename": "Location"
+    },
+    "categories": [
+      {
+        "title": "Soul Food",
+        "__typename": "Category"
+      }
+    ],
+    "hours": [
+      {
+        "is_open_now": false,
+        "open": [
+          {
+            "day": 1,
+            "start": "1730",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 2,
+            "start": "1730",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 3,
+            "start": "1730",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 4,
+            "start": "1730",
+            "end": "2300",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 5,
+            "start": "1730",
+            "end": "2300",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 6,
+            "start": "1730",
+            "end": "2200",
+            "__typename": "OpenHours"
+          }
+        ],
+        "__typename": "Hours"
+      }
+    ],
+    "__typename": "Business"
+  },
+  {
+    "name": "Chi Ken",
+    "id": "chi-ken-brooklyn",
+    "rating": 3.5,
+    "url":
+      "https://www.yelp.com/biz/chi-ken-brooklyn?adjust_creative=x7LWoNv05Hf_vNeFecFImQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=x7LWoNv05Hf_vNeFecFImQ",
+    "price": "$",
+    "photos": ["https://s3-media3.fl.yelpcdn.com/bphoto/yB04c9LCvwa95NWILaWvLg/o.jpg"],
+    "coordinates": {
+      "latitude": 40.63866,
+      "longitude": -74.00591,
+      "__typename": "Coordinates"
+    },
+    "reviews": [
+      {
+        "rating": 4,
+        "text":
+          "I stopped by here after a friend of mine recommended this place a while back and said there was jumbo squid here. I looked forward to trying the squid and...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 4,
+        "text":
+          "I live down the block from this spot and every time my best friend visits, she'll always come by this spot for their sweet potato fries. \n\nEveryone raves...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 4,
+        "text":
+          "Stopped in mainly to get bubble tea, but also ended up sampling the signature Taiwanese popcorn chicken. \n\nI had the passion fruit frappe, and my friend had...",
+        "__typename": "Review"
+      }
+    ],
+    "location": {
+      "formatted_address": "5401 8th Ave\nBrooklyn, NY 11220",
+      "address1": "5401 8th Ave",
+      "address2": "",
+      "address3": "",
+      "city": "Brooklyn",
+      "state": "NY",
+      "zip_code": "11220",
+      "__typename": "Location"
+    },
+    "categories": [
+      {
+        "title": "Taiwanese",
+        "__typename": "Category"
+      },
+      {
+        "title": "Chicken Shop",
+        "__typename": "Category"
+      }
+    ],
+    "hours": [
+      {
+        "is_open_now": true,
+        "open": [
+          {
+            "day": 0,
+            "start": "1200",
+            "end": "0100",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 1,
+            "start": "1200",
+            "end": "0100",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 2,
+            "start": "1200",
+            "end": "0100",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 3,
+            "start": "1200",
+            "end": "0100",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 4,
+            "start": "1200",
+            "end": "0100",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 5,
+            "start": "1200",
+            "end": "0100",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 6,
+            "start": "1200",
+            "end": "0100",
+            "__typename": "OpenHours"
+          }
+        ],
+        "__typename": "Hours"
+      }
+    ],
+    "__typename": "Business"
+  },
+  {
+    "name": "Hill Country Chicken",
+    "id": "hill-country-chicken-brooklyn",
+    "rating": 3.5,
+    "url":
+      "https://www.yelp.com/biz/hill-country-chicken-brooklyn?adjust_creative=x7LWoNv05Hf_vNeFecFImQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=x7LWoNv05Hf_vNeFecFImQ",
+    "price": "$$",
+    "photos": ["https://s3-media3.fl.yelpcdn.com/bphoto/ToPvOALKotVaNWv5-N1kAw/o.jpg"],
+    "coordinates": {
+      "latitude": 40.6924283948416,
+      "longitude": -73.9885378306885,
+      "__typename": "Coordinates"
+    },
+    "reviews": [
+      {
+        "rating": 5,
+        "text":
+          "I'm from Texas and this place felt familiar. It's too nice to truly say 'no frills' but good food and portions without all the fuss. Plus- did you see my...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 4,
+        "text":
+          "For my liking of fried chicken.. I'd not give any fried chicken place a bad review.... and this fried chicken sandwich was pretty good! I think it's similar...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 5,
+        "text":
+          "When I crave chicken and biscuits for lunch, this is where I go. \nI love HC's fried chicken and buttermilk biscuits. \nI love their wide selection of...",
+        "__typename": "Review"
+      }
+    ],
+    "location": {
+      "formatted_address": "345 Adams St\nBrooklyn, NY 11201",
+      "address1": "345 Adams St",
+      "address2": "",
+      "address3": "",
+      "city": "Brooklyn",
+      "state": "NY",
+      "zip_code": "11201",
+      "__typename": "Location"
+    },
+    "categories": [
+      {
+        "title": "Southern",
+        "__typename": "Category"
+      }
+    ],
+    "hours": [
+      {
+        "is_open_now": true,
+        "open": [
+          {
+            "day": 0,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 1,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 2,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 3,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 4,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 5,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 6,
+            "start": "1100",
+            "end": "2200",
+            "__typename": "OpenHours"
+          }
+        ],
+        "__typename": "Hours"
+      }
+    ],
+    "__typename": "Business"
+  },
+  {
+    "name": "Peaches Shrimp and Crab",
+    "id": "peaches-shrimp-and-crab-brooklyn-4",
+    "rating": 4.0,
+    "url":
+      "https://www.yelp.com/biz/peaches-shrimp-and-crab-brooklyn-4?adjust_creative=x7LWoNv05Hf_vNeFecFImQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_graphql&utm_source=x7LWoNv05Hf_vNeFecFImQ",
+    "price": "$$",
+    "photos": ["https://s3-media3.fl.yelpcdn.com/bphoto/izW7TakyphSw3cr-0UTBew/o.jpg"],
+    "coordinates": {
+      "latitude": 40.687997,
+      "longitude": -73.962681,
+      "__typename": "Coordinates"
+    },
+    "reviews": [
+      {
+        "rating": 4,
+        "text":
+          "I've been aware of this place for a while, but didn't give it a chance because \"shrimp & crab\" was in the title, leading me to believe that everything would...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 5,
+        "text":
+          "Mmm... Southern cuisine! My family came here for dinner tonight and we basically ordered the entire menu LOL. My uncle recommend this restaurant and once I...",
+        "__typename": "Review"
+      },
+      {
+        "rating": 2,
+        "text":
+          "I was really disappointed here, I'm sorry to say. There's few things that I ever leave less than 3 stars but cleanliness is one of them. We came right when...",
+        "__typename": "Review"
+      }
+    ],
+    "location": {
+      "formatted_address": "285 Grand Ave\nBrooklyn, NY 11238",
+      "address1": "285 Grand Ave",
+      "address2": "",
+      "address3": null,
+      "city": "Brooklyn",
+      "state": "NY",
+      "zip_code": "11238",
+      "__typename": "Location"
+    },
+    "categories": [
+      {
+        "title": "Seafood",
+        "__typename": "Category"
+      },
+      {
+        "title": "American (New)",
+        "__typename": "Category"
+      },
+      {
+        "title": "Southern",
+        "__typename": "Category"
+      }
+    ],
+    "hours": [
+      {
+        "is_open_now": true,
+        "open": [
+          {
+            "day": 0,
+            "start": "1100",
+            "end": "2300",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 1,
+            "start": "1100",
+            "end": "2300",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 2,
+            "start": "1100",
+            "end": "2300",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 3,
+            "start": "1100",
+            "end": "2300",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 4,
+            "start": "1100",
+            "end": "2300",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 5,
+            "start": "1100",
+            "end": "2300",
+            "__typename": "OpenHours"
+          },
+          {
+            "day": 6,
+            "start": "1100",
+            "end": "2300",
+            "__typename": "OpenHours"
+          }
+        ],
+        "__typename": "Hours"
+      }
+    ],
+    "__typename": "Business"
+  }
+]

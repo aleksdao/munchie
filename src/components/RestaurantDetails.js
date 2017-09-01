@@ -4,7 +4,8 @@
 import React from 'react';
 import { View, Text, Button, StyleSheet, Image } from 'react-native';
 // import { View as ShoutemView } from '@shoutem/ui';
-import AppText from './DinDinText';
+import get from 'lodash/get';
+import AppText from './reusable/Text';
 
 import { convertMilitaryTime } from '../utils';
 
@@ -15,21 +16,17 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     // fontFamily: 'Roboto',
   },
-  textStyle: { color: '#A8A8A8', fontSize: 17, fontFamily: 'Roboto-Light', fontWeight: '300' },
+  textStyle: { color: '#A8A8A8', fontSize: 16, fontFamily: 'Roboto-Light', fontWeight: '300' },
 });
 
 export function GreyText({ children, style }) {
-  return (
-    <AppText style={[styles.textStyle, style]}>
-      {children}
-    </AppText>
-  );
+  return <AppText style={[styles.textStyle, style]}>{children}</AppText>;
 }
 
 export function OpeningHours(props) {
   console.log(props);
   const { restaurant: { hours }, style } = props;
-  const { is_open_now: isOpenNow, open: openingHours } = hours[0];
+  const { is_open_now: isOpenNow = false, open: openingHours = [] } = get(hours, '0', {});
   const today = openingHours.filter(hours => hours.day === 0);
   const hoursToday = today
     .map(hours => [convertMilitaryTime(hours.start), convertMilitaryTime(hours.end)].join(' - '))
@@ -37,9 +34,8 @@ export function OpeningHours(props) {
 
   return (
     <View style={style}>
-      {isOpenNow ? <GreyText>Open now </GreyText> : <GreyText>Closed</GreyText>}
       <GreyText>
-        {hoursToday}
+        {isOpenNow ? 'Open now' : 'Closed'} {hoursToday}
       </GreyText>
     </View>
   );
@@ -49,31 +45,28 @@ export function Description({ restaurant: { categories, price }, style }) {
   return (
     <View style={style}>
       <GreyText>
-        {categories.slice(0, 2).map(category => category.title).join(', ')}
+        {/* {categories.slice(0, 2).map(category => category.title).join(', ')} */}
+        {categories[0].title}
       </GreyText>
-      <GreyText>
-        {' \u2022 '}
-      </GreyText>
-      <GreyText>
-        {price}
-      </GreyText>
+      <GreyText>{' \u2022 '}</GreyText>
+      <GreyText>{price}</GreyText>
       <GreyText style={{ color: '#E1E1E1', fontWeight: '100' }}>
         {new Array(4 - price.length).fill('$').reduce((acc, next) => `${acc}${next}`, '')}
       </GreyText>
-      <GreyText>
-        {' \u2022 '}
-      </GreyText>
+      <GreyText>{' \u2022 '}</GreyText>
       <GreyText>5 min walk</GreyText>
     </View>
   );
 }
 
+function getDisplayAddress(address) {
+  return address.split('\n').join(', ');
+}
+
 export function Address({ restaurant: { location: { formatted_address } }, style }) {
   return (
     <View style={[style, { marginBottom: 17 }]}>
-      <GreyText style={{ color: 'black' }}>
-        {formatted_address.split('\n').join(', ')}
-      </GreyText>
+      <GreyText style={{ color: 'black' }}>{getDisplayAddress(formatted_address)}</GreyText>
     </View>
   );
 }
@@ -115,18 +108,18 @@ export function Rating({ rating, style, name }) {
       <Image
         style={[{ paddingVertical: 2, marginLeft: 10 }, logoStyle]}
         source={
-          name === 'Yelp'
-            ? require('../assets/Yelp_burst_positive_RGB.png')
-            : require('../assets/foursquare_pink.png')
+          name === 'Yelp' ? (
+            require('../assets/Yelp_burst_positive_RGB.png')
+          ) : (
+            require('../assets/foursquare_pink.png')
+          )
         }
       />
       <View style={{ marginRight: 20 }}>
         <GreyText style={{ fontSize: 20, color: 'black', alignSelf: 'flex-end' }}>
           {rating}/5
         </GreyText>
-        <GreyText style={{ fontSize: 13, alignSelf: 'flex-end' }}>
-          {name}
-        </GreyText>
+        <GreyText style={{ fontSize: 13, alignSelf: 'flex-end' }}>{name}</GreyText>
       </View>
     </View>
   );
