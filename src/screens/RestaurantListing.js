@@ -134,12 +134,8 @@ class RestaurantListing extends Component {
     headerTintColor: 'white',
   };
 
-  scroll = () => {
-    this.scrollView._component.scrollTo();
-  };
-
-  onScroll = ({ nativeEvent }) => {
-    // console.log(nativeEvent);
+  scroll = coords => {
+    this.scrollView.scrollTo(coords);
   };
 
   render() {
@@ -150,16 +146,15 @@ class RestaurantListing extends Component {
     // }
     console.log(this.props);
     // const { reviews, photos, coordinates, name } = restaurant;
-    console.log(JSON.parse(JSON.stringify(businesses)))
+    console.log(JSON.parse(JSON.stringify(businesses)));
     // const restaurant = businesses[Math.floor(Math.random() * 20)];
     const restaurant = businesses[10];
-    console.log({restaurant})
+    console.log({ restaurant });
     const { reviews, photos, coordinates, name } = restaurant;
 
     return (
       <View style={{ flex: 1, position: 'relative', paddingBottom: 80, backgroundColor: 'white' }}>
         <ScrollView
-          onScroll={this.onScroll}
           scrollEventThrottle={16}
           contentContainerStyle={styles.container}
           scrollEnabled
@@ -174,6 +169,16 @@ class RestaurantListing extends Component {
             <Ratings />
           </RestaurantDetails>
           <View
+            ref="tabs"
+            onLayout={({ nativeEvent: { layout: { x, y, width, height } } }) => {
+              console.log(' initial tabs', { x, y, width, height });
+              this.setState({ tabsY: y });
+              {
+                /* this.refs.tabs.measure((x, y, width, height, pageX, pageY) => {
+                console.log('tabs', { x, y, width, height, pageX, pageY });
+              }); */
+              }
+            }}
             style={{
               flex: 1,
               borderColor: 'blue',
@@ -186,12 +191,18 @@ class RestaurantListing extends Component {
                 display: 'flex',
                 flex: 1,
                 paddingVertical: 25,
-                backgroundColor: 'white',
+                backgroundColor: 'transparent',
                 borderColor: 'black',
                 borderWidth: 1,
               }}
             >
               <View
+                ref="Marker"
+                onLayout={({ nativeEvent }) => {
+                  this.refs.Marker.measure((x, y, width, height, pageX, pageY) => {
+                    console.log({ x, y, width, height, pageX, pageY });
+                  });
+                }}
                 style={{
                   borderBottomWidth: 3,
                   borderBottomColor: '#17CAB1',
@@ -199,15 +210,17 @@ class RestaurantListing extends Component {
                   paddingBottom: 2,
                 }}
               >
-                <Text
-                  style={{
-                    fontWeight: '400',
-                    color: '#17CAB1',
-                    fontSize: 15,
-                  }}
-                >
-                  PHOTOS
-                </Text>
+                <TouchableHighlight onPress={() => this.scroll({ y: this.state.tabsY })}>
+                  <Text
+                    style={{
+                      fontWeight: '400',
+                      color: '#17CAB1',
+                      fontSize: 15,
+                    }}
+                  >
+                    PHOTOS
+                  </Text>
+                </TouchableHighlight>
               </View>
 
               <View
@@ -216,28 +229,46 @@ class RestaurantListing extends Component {
                   paddingBottom: 2,
                 }}
               >
-                <Text
-                  style={{
-                    fontWeight: '400',
-                    fontSize: 15,
-                    color: '#A8A8A8',
-                  }}
+                <TouchableHighlight
+                  onPress={() => this.scroll({ y: this.state.tabsY + this.state.cardHeight })}
                 >
-                  REVIEWS
-                </Text>
+                  <Text
+                    style={{
+                      fontWeight: '400',
+                      fontSize: 15,
+                      color: '#A8A8A8',
+                    }}
+                  >
+                    REVIEWS
+                  </Text>
+                </TouchableHighlight>
               </View>
               <View
                 style={{
                   paddingBottom: 2,
                 }}
               >
-                <Text style={{ fontWeight: '400', fontSize: 15, color: '#A8A8A8' }}>MAP</Text>
+                <TouchableHighlight
+                  onPress={() => this.scroll({ y: this.state.tabsY + 2 * this.state.cardHeight })}
+                >
+                  <Text style={{ fontWeight: '400', fontSize: 15, color: '#A8A8A8' }}>MAP</Text>
+                </TouchableHighlight>
               </View>
             </View>
           </View>
-          <ContentCard ref={photoGallery => this.refs.photoGallery = photoGallery}>
-            <PhotoGallery1 />
-          </ContentCard>
+          <View
+            ref="photoGallery"
+            onLayout={({ nativeEvent: { layout: { height } } }) => {
+              this.setState({ cardHeight: height });
+              this.refs.photoGallery.measure((x, y, width, height, pageX, pageY) => {
+                console.log('photoGallery', { x, y, width, height, pageX, pageY });
+              });
+            }}
+          >
+            <ContentCard>
+              <PhotoGallery1 />
+            </ContentCard>
+          </View>
           <ContentCard scrolling>
             <Reviews reviews={reviews} />
           </ContentCard>

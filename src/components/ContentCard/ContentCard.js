@@ -1,13 +1,24 @@
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
 
-function Card({ children, scrolling }) {
-  return (
-    <View style={styles.shadowContainer}>
+class Card extends React.Component {
+  render() {
+    const { children, scrolling } = this.props;
+    return (
+      <View style={styles.shadowContainer}>
         <View style={styles.nonScrollContainer}>{children}</View>
-    </View>
-  );
+      </View>
+    );
+  }
 }
+
+// function Card({ children, scrolling }) {
+//   return (
+//     <View style={styles.shadowContainer}>
+//       <View style={styles.nonScrollContainer}>{children}</View>
+//     </View>
+//   );
+// }
 
 const styles = StyleSheet.create({
   shadowContainer: {
